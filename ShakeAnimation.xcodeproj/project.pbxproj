@@ -20,6 +20,7 @@
 		A5D1C52F16C22C930005925B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D1C52D16C22C930005925B /* ViewController.xib */; };
 		A5D1C53816C22CD00005925B /* UIView+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D1C53716C22CD00005925B /* UIView+ShakeAnimation.m */; };
 		A5D1C53A16C238160005925B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1C53916C238160005925B /* QuartzCore.framework */; };
+		A5D1C53C16C26A010005925B /* iconSize.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5D1C53B16C26A010005925B /* iconSize.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		A5D1C53616C22CD00005925B /* UIView+ShakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ShakeAnimation.h"; sourceTree = "<group>"; };
 		A5D1C53716C22CD00005925B /* UIView+ShakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ShakeAnimation.m"; sourceTree = "<group>"; };
 		A5D1C53916C238160005925B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A5D1C53B16C26A010005925B /* iconSize.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iconSize.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		A5D1C51816C22C920005925B /* ShakeAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				A5D1C53B16C26A010005925B /* iconSize.jpg */,
 				A5D1C53516C22CA70005925B /* Category */,
 				A5D1C52116C22C920005925B /* AppDelegate.h */,
 				A5D1C52216C22C920005925B /* AppDelegate.m */,
@@ -180,6 +183,7 @@
 				A5D1C52716C22C930005925B /* Default@2x.png in Resources */,
 				A5D1C52916C22C930005925B /* Default-568h@2x.png in Resources */,
 				A5D1C52F16C22C930005925B /* ViewController.xib in Resources */,
+				A5D1C53C16C26A010005925B /* iconSize.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
