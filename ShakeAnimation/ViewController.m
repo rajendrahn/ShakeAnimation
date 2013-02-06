@@ -26,16 +26,14 @@
     [super viewDidLoad];
 }
 
-- (IBAction)appIconShakeAnimationStartOrStop:(id)sender
+- (IBAction)appIconShakeAnimationStart:(id)sender
 {
-    if([_appIconImageView appDeleteShakeAnimationInProgress])
-    {
-        [_appIconImageView stopAppDeleteShakeAnimation];
-    }
-    else
-    {
-        [_appIconImageView startAppDeleteShakeAnimation];
-    }
+    [_appIconImageView startAppDeleteShakeAnimation];
+}
+
+- (IBAction)shakeStop:(id)sender
+{
+    [_appIconImageView stopAppDeleteShakeAnimation];
 }
 
 - (IBAction)incorrectPasswordAnimationStart:(id)sender

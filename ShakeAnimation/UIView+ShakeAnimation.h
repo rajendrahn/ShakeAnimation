@@ -16,6 +16,5 @@
 //performs the Apple's shake animation that happens when you long press an app icon.
 - (void)startAppDeleteShakeAnimation;
 - (void)stopAppDeleteShakeAnimation;
-- (BOOL)appDeleteShakeAnimationInProgress;
 
 @end
