@@ -18,6 +18,8 @@
 		A5D1C52916C22C930005925B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5D1C52816C22C930005925B /* Default-568h@2x.png */; };
 		A5D1C52C16C22C930005925B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D1C52B16C22C930005925B /* ViewController.m */; };
 		A5D1C52F16C22C930005925B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D1C52D16C22C930005925B /* ViewController.xib */; };
+		A5D1C53816C22CD00005925B /* UIView+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D1C53716C22CD00005925B /* UIView+ShakeAnimation.m */; };
+		A5D1C53A16C238160005925B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1C53916C238160005925B /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		A5D1C52A16C22C930005925B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A5D1C52B16C22C930005925B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A5D1C52E16C22C930005925B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		A5D1C53616C22CD00005925B /* UIView+ShakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ShakeAnimation.h"; sourceTree = "<group>"; };
+		A5D1C53716C22CD00005925B /* UIView+ShakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ShakeAnimation.m"; sourceTree = "<group>"; };
+		A5D1C53916C238160005925B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D1C53A16C238160005925B /* QuartzCore.framework in Frameworks */,
 				A5D1C51316C22C920005925B /* UIKit.framework in Frameworks */,
 				A5D1C51516C22C920005925B /* Foundation.framework in Frameworks */,
 				A5D1C51716C22C920005925B /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +79,7 @@
 		A5D1C51116C22C920005925B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5D1C53916C238160005925B /* QuartzCore.framework */,
 				A5D1C51216C22C920005925B /* UIKit.framework */,
 				A5D1C51416C22C920005925B /* Foundation.framework */,
 				A5D1C51616C22C920005925B /* CoreGraphics.framework */,
@@ -83,6 +90,7 @@
 		A5D1C51816C22C920005925B /* ShakeAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				A5D1C53516C22CA70005925B /* Category */,
 				A5D1C52116C22C920005925B /* AppDelegate.h */,
 				A5D1C52216C22C920005925B /* AppDelegate.m */,
 				A5D1C52A16C22C930005925B /* ViewController.h */,
@@ -105,6 +113,15 @@
 				A5D1C52816C22C930005925B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5D1C53516C22CA70005925B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A5D1C53616C22CD00005925B /* UIView+ShakeAnimation.h */,
+				A5D1C53716C22CD00005925B /* UIView+ShakeAnimation.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +193,7 @@
 				A5D1C51F16C22C920005925B /* main.m in Sources */,
 				A5D1C52316C22C920005925B /* AppDelegate.m in Sources */,
 				A5D1C52C16C22C930005925B /* ViewController.m in Sources */,
+				A5D1C53816C22CD00005925B /* UIView+ShakeAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

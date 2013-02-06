@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "UIView+ShakeAnimation.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *appIconImageView;
+@property (weak, nonatomic) IBOutlet UIButton *appIconShakeAnimationStart;
+
+@property (weak, nonatomic) IBOutlet UITextField *invalidPasswordTextbox;
+@property (weak, nonatomic) IBOutlet UIButton *invalidPasswordAnimationStart;
 
 @end
 
@@ -17,13 +24,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)appIconShakeAnimationStartOrStop:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if([_appIconImageView appDeleteShakeAnimationInProgress])
+    {
+        [_appIconImageView stopAppDeleteShakeAnimation];
+    }
+    else
+    {
+        [_appIconImageView startAppDeleteShakeAnimation];
+    }
 }
 
+- (IBAction)incorrectPasswordAnimationStart:(id)sender
+{
+    [_invalidPasswordTextbox incorrectPasswordShakeAnimationWithCompletionBlock:^{
+        NSLog(@"incorrectPasswordShakeAnimation Completed");
+    }];
+}
 @end
