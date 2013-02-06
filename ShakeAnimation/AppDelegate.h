@@ -3,7 +3,6 @@
 //  ShakeAnimation
 //
 //  Created by Rajendra HN on 06/02/13.
-//  Copyright (c) 2013 Robosoft. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -14,6 +13,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ViewController *viewController;
+@property (strong, nonatomic) UIViewController *viewController;
 
 @end
